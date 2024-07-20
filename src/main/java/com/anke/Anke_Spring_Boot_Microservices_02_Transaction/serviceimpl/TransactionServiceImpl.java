@@ -25,7 +25,7 @@ public class TransactionServiceImpl implements ITransactionService {
         Transaction transaction = transactionRepository.findById(transactionId).get();
         transaction.setUserId(updatedTransaction.getUserId());
         transaction.setProductId(updatedTransaction.getProductId());
-        transaction.setTransactionTime(updatedTransaction.getTransactionTime());
+        //transaction.setTransactionTime(updatedTransaction.getTransactionTime());
         return transactionRepository.save(transaction);
     }
 

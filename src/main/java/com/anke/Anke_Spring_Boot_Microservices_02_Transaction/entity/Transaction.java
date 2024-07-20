@@ -19,6 +19,6 @@ public class Transaction {
     @Column(name = "product_id", nullable = false)
     private Long productId;
 
-    @Column(name = "transaction_time", nullable = false)
-    private LocalDateTime transactionTime;
+    /*@Column(name = "transaction_time", nullable = false)
+    private LocalDateTime transactionTime;*/
 }
